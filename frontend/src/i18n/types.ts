@@ -35,7 +35,7 @@ export type Dictionary = {
   dir: Dir
   locale: string
   brand: string
-  brandSuffix: string
+  techLogoAlt: string
   documentTitle: string
   metaDescription: string
   nav: {

@@ -4,7 +4,7 @@ export const tr: Dictionary = {
   dir: 'ltr',
   locale: 'tr-TR',
   brand: 'IBTIKAR',
-  brandSuffix: 'Tech',
+  techLogoAlt: 'Ibtikar Tech eğitim programı',
   documentTitle: 'Ibtikar Tech — İnşa eden bir nesil',
   metaDescription:
     'Ibtikar Tech, İbtikar Gönüllü Topluluğu’nun ücretsiz eğitim programıdır: Mühendislik Yönetimi, Bilimsel Araştırma ve Veri Analizi, Yapay Zekâ ve Chatbot Geliştirme. On haftalık güzergâhlar, canlı dersler, uygulamalı projeler ve iki dilli sertifika.',

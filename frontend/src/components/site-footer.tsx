@@ -1,5 +1,5 @@
 import { ArrowUpRight, Share2, Mail, MessageCircle, GitBranch, FileText, GraduationCap } from 'lucide-react'
-import { Logomark } from '@/components/logomark'
+import { BrandLockup } from '@/components/logomark'
 import { LinkedInIcon, TelegramIcon } from '@/components/social-icons'
 import { useLocale } from '@/i18n/locale-provider'
 import { LINKS } from '@/lib/links'
@@ -63,11 +63,8 @@ export function SiteFooter() {
       <div className="mx-auto max-w-7xl px-5 py-20 md:px-8 md:py-24">
         <div className="grid gap-12 md:grid-cols-12">
           <div className="md:col-span-5">
-            <a href="#top" className="inline-flex items-center gap-2.5">
-              <Logomark dark />
-              <span className="font-mono text-[11px] font-bold uppercase tracking-[0.22em] text-accent">
-                {t.brandSuffix}
-              </span>
+            <a href="#top" className="inline-block">
+              <BrandLockup dark />
             </a>
             <p className="mt-6 max-w-sm text-pretty leading-relaxed text-navy-foreground/70">
               {t.footer.blurb}

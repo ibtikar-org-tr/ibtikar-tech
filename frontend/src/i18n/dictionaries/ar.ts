@@ -4,7 +4,7 @@ export const ar: Dictionary = {
   dir: 'rtl',
   locale: 'ar',
   brand: 'إبتكار',
-  brandSuffix: 'Tech',
+  techLogoAlt: 'برنامج Ibtikar Tech التدريبي',
   documentTitle: 'برنامج Ibtikar Tech — جيل يبني',
   metaDescription:
     'Ibtikar Tech برنامج تدريبي مجاني من تجمّع ابتكار: الإدارة الهندسية، والبحث العلمي وتحليل البيانات، والذكاء الاصطناعي وبناء التطبيقات الذكية. مسارات لعشرة أسابيع، محاضرات مباشرة، مشاريع تطبيقية، وشهادة بالعربي والإنجليزي.',

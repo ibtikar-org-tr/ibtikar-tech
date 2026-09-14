@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import { Menu, X, ArrowUpRight } from 'lucide-react'
 import { LanguageSwitcher } from '@/components/language-switcher'
-import { Logomark } from '@/components/logomark'
+import { BrandLockup } from '@/components/logomark'
 import { useLocale } from '@/i18n/locale-provider'
 import { LINKS } from '@/lib/links'
 import { cn } from '@/lib/utils'
@@ -34,12 +34,9 @@ export function SiteHeader() {
         scrolled ? 'bg-background/95 backdrop-blur-sm border-b border-border' : 'border-b border-transparent',
       )}
     >
-      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-5 md:px-8">
-        <a href="#top" aria-label={t.nav.homeAria} className="flex items-center gap-2.5">
-          <Logomark dark={onDark} />
-          <span className="font-mono text-[11px] font-bold uppercase tracking-[0.22em] text-accent">
-            {t.brandSuffix}
-          </span>
+      <div className="mx-auto flex h-[4.5rem] max-w-7xl items-center justify-between gap-3 px-5 md:px-8">
+        <a href="#top" aria-label={t.nav.homeAria} className="min-w-0">
+          <BrandLockup dark={onDark} compact />
         </a>
 
         <nav className="hidden items-center gap-8 lg:flex" aria-label={t.nav.primaryNav}>

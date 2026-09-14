@@ -4,7 +4,7 @@ export const en: Dictionary = {
   dir: 'ltr',
   locale: 'en-US',
   brand: 'IBTIKAR',
-  brandSuffix: 'Tech',
+  techLogoAlt: 'Ibtikar Tech training program',
   documentTitle: 'Ibtikar Tech — A generation that builds',
   metaDescription:
     'Ibtikar Tech is a free training program by Ibtikar Volunteer Assembly: Engineering Management, Scientific Research & Data Analysis, and AI & Chatbot Development. Ten-week tracks, live lectures, applied projects, and a bilingual certificate.',
