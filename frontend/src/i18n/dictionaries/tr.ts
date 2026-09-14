@@ -5,7 +5,7 @@ export const tr: Dictionary = {
   locale: 'tr-TR',
   brand: 'IBTIKAR',
   techLogoAlt: 'Ibtikar Tech eğitim programı',
-  documentTitle: 'Ibtikar Tech — İnşa eden bir nesil',
+  documentTitle: 'Ibtikar Tech — İnovasyon yapan bir nesil',
   metaDescription:
     'Ibtikar Tech, İbtikar Gönüllü Topluluğu’nun ücretsiz eğitim programıdır: Mühendislik Yönetimi, Bilimsel Araştırma ve Veri Analizi, Yapay Zekâ ve Chatbot Geliştirme. On haftalık güzergâhlar, canlı dersler, uygulamalı projeler ve iki dilli sertifika.',
   nav: {
@@ -23,7 +23,7 @@ export const tr: Dictionary = {
   },
   hero: {
     eyebrow: 'İbtikar Gönüllü Topluluğu — Ücretsiz eğitim programı',
-    titleLine1: 'İnşa Eden',
+    titleLine1: 'İnovasyon Yapan',
     titleLine2Before: 'Bir',
     titleLine2Accent: 'Nesil',
     body: 'Ibtikar Tech; Mühendislik Yönetimi, Bilimsel Araştırma ve Veri Analizi ile Yapay Zekâ ve Chatbot Geliştirme olmak üzere üç paralel güzergâh sunan, gönüllülük temelli ücretsiz bir programdır. Akşam canlı dersleri, uygulamalı çalışma ve bitirme projesi — Suriye içinde ve dışında üniversite öğrencileri ile teknolojiye ilgi duyanlar için.',

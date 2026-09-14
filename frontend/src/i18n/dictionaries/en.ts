@@ -5,7 +5,7 @@ export const en: Dictionary = {
   locale: 'en-US',
   brand: 'IBTIKAR',
   techLogoAlt: 'Ibtikar Tech training program',
-  documentTitle: 'Ibtikar Tech — A generation that builds',
+  documentTitle: 'Ibtikar Tech — A generation that innovates',
   metaDescription:
     'Ibtikar Tech is a free training program by Ibtikar Volunteer Assembly: Engineering Management, Scientific Research & Data Analysis, and AI & Chatbot Development. Ten-week tracks, live lectures, applied projects, and a bilingual certificate.',
   nav: {
@@ -25,7 +25,7 @@ export const en: Dictionary = {
     eyebrow: 'Ibtikar Volunteer Assembly — Free training program',
     titleLine1: 'A Generation',
     titleLine2Before: 'That',
-    titleLine2Accent: 'Builds',
+    titleLine2Accent: 'Innovates',
     body: 'Ibtikar Tech is a free, volunteer-led program with three parallel tracks — Engineering Management, Scientific Research & Data Analysis, and Artificial Intelligence & Chatbot Development. Evening live lectures, applied practice, and a capstone project for university students and tech enthusiasts in Syria and beyond.',
     exploreTracks: 'Explore Tracks',
     aboutProgram: 'About the program',
