@@ -17,7 +17,28 @@ const CONNECT_HREFS = [
   { href: LINKS.bylaws, key: 'bylaws' as const, icon: FileText },
 ]
 
-const PARTNERS = [
+type Partner = {
+  name: string
+  href?: string
+  logo: string
+}
+
+const PARTNERS: Partner[] = [
+  {
+    name: 'تجمع المهندسين السوريين في تركيا',
+    href: 'http://mtd.ngo/',
+    logo: '/partners/mtd.png',
+  },
+  {
+    name: 'TechRise',
+    href: 'https://www.instagram.com/techrise5',
+    logo: '/partners/techrise.png',
+  },
+  {
+    name: 'Youth Affairs',
+    href: 'https://www.facebook.com/Youthafairs/',
+    logo: '/partners/youth-affairs.png',
+  },
   {
     name: 'Tulip Technologies',
     href: 'https://www.tuliptechs.com/',
@@ -108,7 +129,7 @@ export function SiteFooter() {
                   <img
                     src={partner.logo}
                     alt={partner.name}
-                    className="h-10 w-full object-contain opacity-80 transition-opacity hover:opacity-100"
+                    className="h-12 w-full object-contain opacity-90 transition-opacity hover:opacity-100"
                   />
                 )
 

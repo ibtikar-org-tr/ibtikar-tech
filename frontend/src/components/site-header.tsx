@@ -16,7 +16,6 @@ export function SiteHeader() {
     { href: '#about', label: t.nav.about },
     { href: '#tracks', label: t.nav.tracks },
     { href: '#curriculum', label: t.nav.curriculum },
-    { href: '#format', label: t.nav.format },
     { href: '#rules', label: t.nav.rules },
   ]
 
@@ -59,7 +58,7 @@ export function SiteHeader() {
         <div className="hidden items-center gap-4 lg:flex">
           <LanguageSwitcher onDark={onDark} />
           <a
-            href={LINKS.telegramChannel}
+            href={LINKS.register}
             target="_blank"
             rel="noreferrer"
             className={cn(
@@ -69,7 +68,7 @@ export function SiteHeader() {
                 : 'border-foreground bg-foreground text-primary-foreground hover:bg-accent hover:border-accent',
             )}
           >
-            {t.nav.stayUpdated}
+            {t.nav.registerNow}
             <ArrowUpRight
               className={cn(
                 'size-3.5 transition-transform',
@@ -119,13 +118,13 @@ export function SiteHeader() {
             ))}
             <li className="pt-2">
               <a
-                href={LINKS.telegramChannel}
+                href={LINKS.register}
                 target="_blank"
                 rel="noreferrer"
                 onClick={() => setOpen(false)}
                 className="inline-flex items-center gap-1.5 border border-foreground bg-foreground px-4 py-2 font-mono text-[13px] uppercase tracking-[0.1em] text-primary-foreground"
               >
-                {t.nav.stayUpdated}
+                {t.nav.registerNow}
                 <ArrowUpRight className={cn('size-3.5', dir === 'rtl' && '-scale-x-100')} />
               </a>
             </li>

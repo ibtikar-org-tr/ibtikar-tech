@@ -1,3 +1,4 @@
+import { LecturerPortrait } from '@/components/lecturer-portrait'
 import { SectionLabel } from '@/components/section-label'
 import type { TrackId } from '@/i18n/types'
 import { useLocale } from '@/i18n/locale-provider'
@@ -65,6 +66,27 @@ export function CurriculumSection({ activeTrack, onChangeTrack }: CurriculumSect
                 <h3 className="mt-2 font-mono text-lg font-bold uppercase leading-snug tracking-tight text-foreground">
                   {week.title}
                 </h3>
+                <div className="mt-4 flex items-center gap-3">
+                  <LecturerPortrait
+                    id={week.lecturerId}
+                    name={
+                      week.lecturerId
+                        ? t.lecturers.people[week.lecturerId].name
+                        : t.lecturers.tba
+                    }
+                    className="size-12 shrink-0 rounded-full"
+                  />
+                  <span>
+                    <span className="block font-mono text-[10px] uppercase tracking-[0.18em] text-muted-foreground">
+                      {t.curriculum.lecturerLabel}
+                    </span>
+                    <span className="mt-0.5 block text-sm font-medium leading-snug text-foreground">
+                      {week.lecturerId
+                        ? t.lecturers.people[week.lecturerId].name
+                        : t.lecturers.tba}
+                    </span>
+                  </span>
+                </div>
               </div>
               <div className="md:col-span-9">
                 <p className="text-pretty leading-relaxed text-muted-foreground">{week.body}</p>

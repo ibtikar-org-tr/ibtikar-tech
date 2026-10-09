@@ -1,4 +1,5 @@
 export const LINKS = {
+  register: 'https://url.ibtikar.org.tr/ibtikartech',
   telegramChannel: 'https://t.me/ibtikar_org',
   telegramContact: 'https://t.me/ibtikar_org_tr',
   bylaws: 'https://github.com/ibtikar-org-tr/bylaws',

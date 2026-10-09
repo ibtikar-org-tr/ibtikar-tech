@@ -5,6 +5,7 @@
 @theme inline {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
   --font-mono: "Space Grotesk", ui-monospace, monospace;
+  --font-display: "Noto Kufi Arabic", "Cairo", "Space Grotesk", ui-sans-serif, sans-serif;
   --color-navy: var(--navy);
   --color-navy-foreground: var(--navy-foreground);
   --color-signal: var(--signal);
@@ -73,9 +74,29 @@
   }
   html.font-arabic,
   html.font-arabic body {
-    font-family: "IBM Plex Sans Arabic", "Inter", ui-sans-serif, system-ui, sans-serif;
+    font-family: "Cairo", "IBM Plex Sans Arabic", "Inter", ui-sans-serif, system-ui, sans-serif;
+  }
+  html.font-arabic .font-display {
+    font-family: "Noto Kufi Arabic", "Cairo", ui-sans-serif, sans-serif;
+  }
+  html.font-arabic h1,
+  html.font-arabic h2,
+  html.font-arabic h3 {
+    font-family: "Noto Kufi Arabic", "Cairo", "Space Grotesk", ui-sans-serif, sans-serif;
+    letter-spacing: 0.01em;
+    text-transform: none;
   }
   html.font-arabic .font-mono {
-    font-family: "IBM Plex Sans Arabic", "Space Grotesk", ui-monospace, monospace;
+    font-family: "Cairo", "Space Grotesk", ui-monospace, monospace;
+  }
+}
+
+@layer utilities {
+  html.font-arabic h1,
+  html.font-arabic h2,
+  html.font-arabic h3 {
+    font-family: "Noto Kufi Arabic", "Cairo", "Space Grotesk", ui-sans-serif, sans-serif;
+    letter-spacing: 0.01em;
+    text-transform: none;
   }
 }

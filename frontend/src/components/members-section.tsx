@@ -7,7 +7,7 @@ export function RulesSection() {
   return (
     <section id="rules" className="border-t border-border bg-secondary py-24 md:py-32">
       <div className="mx-auto max-w-7xl px-5 md:px-8">
-        <SectionLabel index="N.08" title={t.rules.label} tone="light" />
+        <SectionLabel index="N.07" title={t.rules.label} tone="light" />
 
         <h2 className="mt-6 max-w-xl text-balance font-mono text-3xl font-bold uppercase leading-tight tracking-tight text-foreground md:text-4xl">
           {t.rules.title}

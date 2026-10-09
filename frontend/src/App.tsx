@@ -6,7 +6,6 @@ import { PrinciplesSection } from '@/components/principles-section'
 import { AimsSection } from '@/components/aims-section'
 import { TracksSection } from '@/components/projects-section'
 import { CurriculumSection } from '@/components/curriculum-section'
-import { JourneyTimeline } from '@/components/journey-timeline'
 import { RequirementsSection } from '@/components/clubs-section'
 import { RulesSection } from '@/components/members-section'
 import { SiteFooter } from '@/components/site-footer'
@@ -33,7 +32,6 @@ function App() {
       <AimsSection />
       <TracksSection onOpenCurriculum={openCurriculum} />
       <CurriculumSection activeTrack={activeTrack} onChangeTrack={setActiveTrack} />
-      <JourneyTimeline />
       <RequirementsSection />
       <RulesSection />
       <SiteFooter />

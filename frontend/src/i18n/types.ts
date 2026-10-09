@@ -1,3 +1,5 @@
+import type { LecturerId } from '@/data/lecturers'
+
 export type Lang = 'ar' | 'en' | 'tr'
 export type Dir = 'rtl' | 'ltr'
 export type TrackId = 'engineering' | 'research' | 'ai'
@@ -17,6 +19,7 @@ export type TrackWeek = {
   title: string
   body: string
   practice: string
+  lecturerId?: LecturerId
 }
 
 export type TrackItem = {
@@ -42,9 +45,8 @@ export type Dictionary = {
     about: string
     tracks: string
     curriculum: string
-    format: string
     rules: string
-    stayUpdated: string
+    registerNow: string
     homeAria: string
     primaryNav: string
     mobileNav: string
@@ -53,10 +55,12 @@ export type Dictionary = {
   }
   hero: {
     eyebrow: string
+    brandTitle: string
     titleLine1: string
     titleLine2Before: string
     titleLine2Accent: string
     body: string
+    registerNow: string
     exploreTracks: string
     aboutProgram: string
     stats: { value: string; label: string }[]
@@ -85,18 +89,19 @@ export type Dictionary = {
     audienceLabel: string
     projectLabel: string
     topicsLabel: string
+    lecturersLabel: string
     items: TrackItem[]
+  }
+  lecturers: {
+    tba: string
+    people: Record<LecturerId, { name: string; role: string }>
   }
   curriculum: {
     label: string
     title: string
     weekLabel: string
     practiceLabel: string
-  }
-  format: {
-    label: string
-    title: string
-    steps: { date: string; metric: string; title: string; body: string }[]
+    lecturerLabel: string
   }
   requirements: {
     label: string

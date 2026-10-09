@@ -1,8 +1,22 @@
 import { Factory, BarChart3, Bot, ArrowUpRight } from 'lucide-react'
+import { LecturerPortrait } from '@/components/lecturer-portrait'
 import { SectionLabel } from '@/components/section-label'
-import type { TrackId } from '@/i18n/types'
+import type { LecturerId } from '@/data/lecturers'
+import type { TrackId, TrackWeek } from '@/i18n/types'
 import { useLocale } from '@/i18n/locale-provider'
 import { cn } from '@/lib/utils'
+
+function uniqueLecturerIds(weeks: TrackWeek[]): LecturerId[] {
+  const seen = new Set<LecturerId>()
+  const ids: LecturerId[] = []
+  for (const week of weeks) {
+    if (week.lecturerId && !seen.has(week.lecturerId)) {
+      seen.add(week.lecturerId)
+      ids.push(week.lecturerId)
+    }
+  }
+  return ids
+}
 
 const TRACK_ICONS = {
   engineering: Factory,
@@ -32,6 +46,7 @@ export function TracksSection({ onOpenCurriculum }: TracksSectionProps) {
         <div className="mt-12 grid gap-px border border-border bg-border lg:grid-cols-3">
           {t.tracks.items.map((track) => {
             const Icon = TRACK_ICONS[track.id]
+            const lecturerIds = uniqueLecturerIds(track.weeks)
 
             return (
               <article key={track.id} className="flex flex-col bg-card p-7">
@@ -66,6 +81,36 @@ export function TracksSection({ onOpenCurriculum }: TracksSectionProps) {
                     </li>
                   ))}
                 </ul>
+
+                {lecturerIds.length ? (
+                  <>
+                    <p className="mt-5 font-mono text-[11px] uppercase tracking-[0.18em] text-accent">
+                      {t.tracks.lecturersLabel}
+                    </p>
+                    <ul className="mt-3 flex flex-col gap-2.5">
+                      {lecturerIds.map((id) => {
+                        const person = t.lecturers.people[id]
+                        return (
+                          <li key={id} className="flex items-center gap-3">
+                            <LecturerPortrait
+                              id={id}
+                              name={person.name}
+                              className="size-11 shrink-0 rounded-full"
+                            />
+                            <span>
+                              <span className="block text-sm font-medium leading-snug text-foreground">
+                                {person.name}
+                              </span>
+                              <span className="block text-pretty text-xs leading-relaxed text-muted-foreground">
+                                {person.role}
+                              </span>
+                            </span>
+                          </li>
+                        )
+                      })}
+                    </ul>
+                  </>
+                ) : null}
 
                 <ul className="mt-6 flex flex-wrap gap-2">
                   {track.tools.map((tag) => (

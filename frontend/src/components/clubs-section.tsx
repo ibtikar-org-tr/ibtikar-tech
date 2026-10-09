@@ -7,7 +7,7 @@ export function RequirementsSection() {
   return (
     <section id="requirements" className="bg-background py-24 md:py-32">
       <div className="mx-auto max-w-7xl px-5 md:px-8">
-        <SectionLabel index="N.07" title={t.requirements.label} tone="light" />
+        <SectionLabel index="N.06" title={t.requirements.label} tone="light" />
 
         <h2 className="mt-6 max-w-xl text-balance font-mono text-3xl font-bold uppercase leading-tight tracking-tight text-foreground md:text-4xl">
           {t.requirements.title}
