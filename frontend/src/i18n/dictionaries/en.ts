@@ -13,6 +13,7 @@ export const en: Dictionary = {
     tracks: 'Tracks',
     curriculum: 'Curriculum',
     rules: 'Rules',
+    comingSoon: 'Coming soon',
     registerNow: 'Register now',
     homeAria: 'Ibtikar Tech home',
     primaryNav: 'Primary',
@@ -524,6 +525,15 @@ export const en: Dictionary = {
         body: 'Tracks are independent. You may join one or more, as long as each track’s prerequisites — if any — are met. Ibtikar may add, evolve, or pause a track later.',
       },
     ],
+  },
+  comingSoon: {
+    label: 'Coming soon',
+    kicker: 'Coming soon',
+    title: 'Next stop — Ibtikar Tech — Syrian Association for AI & Entrepreneurship',
+    body: 'The same tracks — Engineering Management, Scientific Research & Data Analysis, and AI & Chatbot Development — will run again, in collaboration with the Syrian Association for AI & Entrepreneurship.',
+    partnerName: 'Syrian Association for AI & Entrepreneurship',
+    partnerRole: 'Partner for the next stop',
+    cta: 'Visit SAAE',
   },
   footer: {
     blurb:

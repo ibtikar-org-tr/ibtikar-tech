@@ -36,7 +36,7 @@ export function TracksSection({ onOpenCurriculum }: TracksSectionProps) {
       <div className="mx-auto max-w-7xl px-5 md:px-8">
         <div className="flex flex-wrap items-end justify-between gap-6">
           <div>
-            <SectionLabel index="N.04" title={t.tracks.label} tone="light" />
+            <SectionLabel index="N.05" title={t.tracks.label} tone="light" />
             <h2 className="mt-6 max-w-xl text-balance font-mono text-3xl font-bold uppercase leading-tight tracking-tight text-foreground md:text-4xl">
               {t.tracks.title}
             </h2>

@@ -13,6 +13,7 @@ export const tr: Dictionary = {
     tracks: 'Güzergâhlar',
     curriculum: 'Haftalık plan',
     rules: 'Kurallar',
+    comingSoon: 'Yakında',
     registerNow: 'Şimdi kaydol',
     homeAria: 'Ibtikar Tech ana sayfa',
     primaryNav: 'Ana menü',
@@ -524,6 +525,15 @@ export const tr: Dictionary = {
         body: 'Güzergâhlar birbirinden bağımsızdır. Her birinin önkoşulları — varsa — karşılandığı sürece birine veya birkaçına katılabilirsiniz. İbtikar sonra bir güzergâh ekleyebilir, geliştirebilir veya durdurabilir.',
       },
     ],
+  },
+  comingSoon: {
+    label: 'Yakında',
+    kicker: 'Yakında',
+    title: 'Sonraki durak — Ibtikar Tech — Suriye Yapay Zekâ ve Girişimcilik Derneği',
+    body: 'Aynı güzergâhlar — Mühendislik Yönetimi, Bilimsel Araştırma ve Veri Analizi, Yapay Zekâ ve Chatbot Geliştirme — Suriye Yapay Zekâ ve Girişimcilik Derneği iş birliğiyle yeniden düzenlenecek.',
+    partnerName: 'Suriye Yapay Zekâ ve Girişimcilik Derneği',
+    partnerRole: 'Sonraki durağın ortağı',
+    cta: 'SAAE’yi ziyaret edin',
   },
   footer: {
     blurb:

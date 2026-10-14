@@ -10,4 +10,5 @@ export const LINKS = {
   email: 'mailto:relations@ibtikar.org.tr',
   lms: 'https://lms.ibtikar.org.tr',
   assembly: 'https://ibtikar.tr',
+  saae: 'https://aisyria.org/',
 } as const

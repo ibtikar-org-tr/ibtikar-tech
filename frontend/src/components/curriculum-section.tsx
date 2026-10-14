@@ -16,7 +16,7 @@ export function CurriculumSection({ activeTrack, onChangeTrack }: CurriculumSect
   return (
     <section id="curriculum" className="bg-background py-24 md:py-32">
       <div className="mx-auto max-w-7xl px-5 md:px-8">
-        <SectionLabel index="N.05" title={t.curriculum.label} tone="light" />
+        <SectionLabel index="N.06" title={t.curriculum.label} tone="light" />
         <h2 className="mt-6 max-w-2xl text-balance font-mono text-3xl font-bold uppercase leading-tight tracking-tight text-foreground md:text-4xl">
           {t.curriculum.title}
         </h2>
