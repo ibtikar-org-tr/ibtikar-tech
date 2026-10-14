@@ -10,7 +10,7 @@ export function AimsSection() {
   return (
     <section className="bg-background py-24 md:py-32">
       <div className="mx-auto max-w-7xl px-5 md:px-8">
-        <SectionLabel index="N.03" title={t.benefits.label} tone="light" />
+        <SectionLabel index="N.04" title={t.benefits.label} tone="light" />
 
         <div className="mt-10 grid gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
           {t.benefits.items.map((aim, index) => {

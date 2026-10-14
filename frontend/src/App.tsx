@@ -8,6 +8,7 @@ import { TracksSection } from '@/components/projects-section'
 import { CurriculumSection } from '@/components/curriculum-section'
 import { RequirementsSection } from '@/components/clubs-section'
 import { RulesSection } from '@/components/members-section'
+import { ComingSoonSection } from '@/components/coming-soon-section'
 import { SiteFooter } from '@/components/site-footer'
 import type { TrackId } from '@/i18n/types'
 
@@ -28,6 +29,7 @@ function App() {
       <SiteHeader />
       <Hero />
       <AboutSection />
+      <ComingSoonSection />
       <PrinciplesSection />
       <AimsSection />
       <TracksSection onOpenCurriculum={openCurriculum} />

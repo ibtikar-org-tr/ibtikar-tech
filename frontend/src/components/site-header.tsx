@@ -14,6 +14,7 @@ export function SiteHeader() {
 
   const navLinks = [
     { href: '#about', label: t.nav.about },
+    { href: '#coming-soon', label: t.nav.comingSoon },
     { href: '#tracks', label: t.nav.tracks },
     { href: '#curriculum', label: t.nav.curriculum },
     { href: '#rules', label: t.nav.rules },

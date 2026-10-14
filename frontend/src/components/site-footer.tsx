@@ -25,14 +25,14 @@ type Partner = {
 
 const PARTNERS: Partner[] = [
   {
+    name: 'الجمعية السورية للذكاء الاصطناعي وريادة الأعمال',
+    href: LINKS.saae,
+    logo: '/partners/saae_logo.jpeg',
+  },
+  {
     name: 'تجمع المهندسين السوريين في تركيا',
     href: 'http://mtd.ngo/',
     logo: '/partners/mtd.png',
-  },
-  {
-    name: 'TechRise',
-    href: 'https://www.instagram.com/techrise5',
-    logo: '/partners/techrise.png',
   },
   {
     name: 'Youth Affairs',

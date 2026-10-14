@@ -46,6 +46,7 @@ export type Dictionary = {
     tracks: string
     curriculum: string
     rules: string
+    comingSoon: string
     registerNow: string
     homeAria: string
     primaryNav: string
@@ -112,6 +113,15 @@ export type Dictionary = {
     label: string
     title: string
     items: { metric: string; title: string; body: string }[]
+  }
+  comingSoon: {
+    label: string
+    kicker: string
+    title: string
+    body: string
+    partnerName: string
+    partnerRole: string
+    cta: string
   }
   footer: {
     blurb: string

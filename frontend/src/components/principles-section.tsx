@@ -7,7 +7,7 @@ export function PrinciplesSection() {
   return (
     <section className="border-y border-border bg-secondary py-20 md:py-24">
       <div className="mx-auto max-w-7xl px-5 md:px-8">
-        <SectionLabel index="N.02" title={t.values.label} tone="light" />
+        <SectionLabel index="N.03" title={t.values.label} tone="light" />
 
         <div className="mt-10 grid grid-cols-2 gap-px border border-border bg-border sm:grid-cols-5">
           {t.values.items.map((item, index) => (
